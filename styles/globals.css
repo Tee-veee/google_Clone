@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link_url {
+    @apply hover:underline cursor-pointer;
+  }
+
+  .search_btn {
+    @apply bg-[#f8f9fa] p-2 rounded-lg text-sm ring-gray-200 text-gray-800 hover:ring-1 focus:outline-none active:ring-gray-400 hover:shadow-md;
+  }
+}
