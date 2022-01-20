@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header/Header";
 import { useRouter } from "next/router";
-import NewsResults from "../components/results/NewsResults";
+import NewsResults from "../components/Results/NewsResults";
 
 function Searchnews({ results }) {
   const router = useRouter();
