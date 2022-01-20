@@ -18,6 +18,7 @@ function MapComponent({ results }) {
       lat: results?.items[0]?.position.lat,
       lng: results?.items[0]?.position.lng,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [results]);
 
   // GET NEW LOCATION DETAILS EVERYTIME COORDS CHANGE

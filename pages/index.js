@@ -46,7 +46,7 @@ export default function Home() {
       {/* BODY */}
       <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
         {/* NEXT JS IMAGE */}
-        <Image src={googleLogo} />
+        <Image src={googleLogo} alt="logo" />
         <div className="flex items-center w-full mt-4 max-w-md hover:shadow-lg focus-within:shadow-lg rounded-full border border-gray-400 px-4 py-2 sm:max-w-xl lg:max-w-2xl">
           <FaSearch className="mr-4 text-gray-500 cursor-pointer" />
           <input
@@ -62,7 +62,7 @@ export default function Home() {
             Google Search
           </button>
           <button className="search_btn ml-4" onClick={searchEvent}>
-            I'm Feeling Lucky
+            Im Feeling Lucky
           </button>
         </div>
       </form>

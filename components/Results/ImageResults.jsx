@@ -10,6 +10,7 @@ function ImageResults({ results }) {
               src={result.link}
               key={i}
               className="h-full w-full object-contain"
+              alt="result-picture"
             />
           );
         })}

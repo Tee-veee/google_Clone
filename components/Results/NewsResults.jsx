@@ -19,6 +19,7 @@ function NewsResults({ results }) {
                     href={result.url}
                     className="hover:text-blue-500 text-lg cursor-pointer"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {result.title}
                   </a>
@@ -31,6 +32,7 @@ function NewsResults({ results }) {
                 <img
                   src={result.urlToImage}
                   className="h-[100px] min-w-[120px] max-w-[150px]"
+                  alt="news-thumbnail"
                 />
               </div>
             </div>

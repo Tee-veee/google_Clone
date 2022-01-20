@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import VideoResults from "../components/Results/VideoResults";
 import Header from "../components/Header/Header";
 
-function searchvideos({ results }) {
+function Searchvideos({ results }) {
   const router = useRouter();
   console.log(results);
   return (
@@ -18,7 +18,7 @@ function searchvideos({ results }) {
   );
 }
 
-export default searchvideos;
+export default Searchvideos;
 
 export async function getServerSideProps(context) {
   const data = await fetch(

@@ -28,10 +28,11 @@ function Header({ All, Images, Videos, News, Maps }) {
     } else if (Maps) {
       setSelected("Maps");
     }
-  }, []);
+  }, [All, Images, Videos, Maps, News]);
 
   useEffect(() => {
     setSearchTerm(router.query.term);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [All, Images, Videos]);
 
   const searchEvent = (e) => {
@@ -66,6 +67,7 @@ function Header({ All, Images, Videos, News, Maps }) {
             className="cursor-pointer"
             height={40}
             width={120}
+            alt="logo"
           />
           <form className="flex border border-gray-200 rounded-full  max-w-3xl items-center px-6 py-4 ml-10 mr-6 w-full hover:shadow-lg focus-within:shadow-lg">
             <input

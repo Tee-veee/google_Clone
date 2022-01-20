@@ -27,6 +27,7 @@ function MapMenu({ setMenu }) {
             onClick={() => router.push("/")}
             height={40}
             width={120}
+            alt="logo"
           />
           <h1 className="text-2xl text-gray-700 ml-1 font-medium">Maps</h1>
         </div>
